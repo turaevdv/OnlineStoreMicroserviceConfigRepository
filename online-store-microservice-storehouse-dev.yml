@@ -1,5 +1,6 @@
-datasource:
-  driver-class-name: org.postgresql.Driver
-  url: jdbc:postgresql://localhost:5400/storehouse_microservice
-  username: postgres_user
-  password: qwerty007
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5400/storehouse_microservice
+    username: postgres_user
+    password: qwerty007
