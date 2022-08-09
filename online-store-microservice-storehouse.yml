@@ -8,3 +8,6 @@ jpa:
   database-platform: org.hibernate.dialect.PostgreSQL9Dialect
   show-sql: false
   hibernate.ddl-auto: none
+liquibase:
+  enabled: true
+  change-log: classpath:/db.migration/db.changelog.master.xml

@@ -3,6 +3,3 @@ datasource:
   url: jdbc:postgresql://localhost:5400/storehouse_microservice
   username: postgres_user
   password: qwerty007
-liquibase:
-  enabled: true
-  change-log: classpath:/db.migration/db.changelog.master.xml
