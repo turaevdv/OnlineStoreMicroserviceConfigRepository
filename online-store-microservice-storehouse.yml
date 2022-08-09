@@ -2,8 +2,8 @@ spring:
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/storehouse_microservice
-    username: postgres_user
-    password: qwerty007
+    username: {cipher} ac05ad061b47dbdd7bc23dc945aedbf3b23133ad9e68779082594b1b5078130c
+    password: {cipher} f21ee31d29795e8304c99949702ad49d76d3bd15edd5a095560656ae5cefdfc3
   jpa:
     database: postgresql
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect
