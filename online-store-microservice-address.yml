@@ -9,7 +9,7 @@ spring:
     hibernate.ddl-auto: none
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://${DATABASE_SERVER_URI:localhost:5432}/address_microservice
+    url: ${DATABASE_SERVER_URI:jdbc:postgresql:localhost:5432/address_microservice}
     username: '{cipher}ac05ad061b47dbdd7bc23dc945aedbf3b23133ad9e68779082594b1b5078130c'
     password: '{cipher}f21ee31d29795e8304c99949702ad49d76d3bd15edd5a095560656ae5cefdfc3'
   liquibase:
