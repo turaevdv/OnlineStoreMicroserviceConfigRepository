@@ -8,12 +8,8 @@ spring:
         enabled: false
 
 eureka:
-  instance:
-    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-  server:
-    waitTimeInMsWhenSyncEmpty: 5
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8074}/eureka/
