@@ -1,0 +1,14 @@
+server:
+  port: 8087
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://${DATABASE_SERVER_URI:localhost}:${DATABASE_SERVER_PORT:5400}/user_microservice
+    username: '{cipher}ac05ad061b47dbdd7bc23dc945aedbf3b23133ad9e68779082594b1b5078130c'
+    password: '{cipher}f21ee31d29795e8304c99949702ad49d76d3bd15edd5a095560656ae5cefdfc3'
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8084}/eureka/
