@@ -28,3 +28,8 @@ management:
     web:
       exposure:
         include: "*"
+
+jwt:
+  header: Authorization
+  secret: Turaev
+  expiration: 864000000
