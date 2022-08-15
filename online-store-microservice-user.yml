@@ -17,7 +17,7 @@ spring:
     change-log: classpath:/db.migration/db.changelog.master.xml
   devtools:
     remote:
-      secret: ${SPRING_DEVTOOLS_SECRET}
+      secret: ${SPRING_DEVTOOLS_SECRET:local_devtools_secret}
 
 eureka:
   instance:
