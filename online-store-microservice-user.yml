@@ -15,6 +15,9 @@ spring:
   liquibase:
     enabled: true
     change-log: classpath:/db.migration/db.changelog.master.xml
+  devtools:
+    remote:
+      secret: ${SPRING_DEVTOOLS_SECRET}
 
 eureka:
   instance:
