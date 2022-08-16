@@ -31,3 +31,11 @@ management:
     web:
       exposure:
         include: "*"
+
+microservice:
+  goods:
+    name: online-store-microservice-goods
+  pickup-point:
+    name: online-store-microservice-pickup-point
+  user:
+    name: online-store-microservice-user
