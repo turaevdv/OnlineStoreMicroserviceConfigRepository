@@ -35,3 +35,5 @@ management:
 microservice:
   order:
     name: online-store-microservice-order
+  goods:
+    name: online-store-microservice-goods
