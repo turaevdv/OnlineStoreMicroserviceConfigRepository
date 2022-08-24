@@ -1,21 +1,6 @@
 server:
   port: ${SERVER_PORT:8070}
 
-spring:
-  cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: false
-          lowerCaseServiceId: true
-      routes:
-        - id: addresses
-          uri: "lb://online-store-microservice-address"
-          predicates:
-            - "Path=/api/v1/addresses"
-            - "Method=POST"
-
-
 eureka:
   instance:
     preferIpAddress: true
@@ -28,3 +13,17 @@ management:
     web:
       exposure:
         include: "*"
+
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: false
+          lowerCaseServiceId: true
+      routes:
+        - id: addresses
+          uri: "lb://online-store-microservice-address"
+          predicates:
+            - "Path=/api/v1/**"
+            - "Method=POST"
