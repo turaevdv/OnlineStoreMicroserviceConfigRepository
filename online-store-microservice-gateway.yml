@@ -26,4 +26,4 @@ spring:
           uri: "lb://online-store-microservice-address"
           predicates:
             - "Path=/api/v1/**"
-            - "Method=POST"
+            - "Method=POST, GET"
