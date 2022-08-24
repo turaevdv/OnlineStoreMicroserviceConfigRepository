@@ -6,7 +6,15 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: true
+          enabled: false
+          lowerCaseServiceId: true
+      routes:
+        - id: addresses
+          uri: "lb://online-store-microservice-address"
+          predicates:
+            - Path: "/api/v1/addresses"
+            - Method: "GET"
+
 
 eureka:
   instance:
