@@ -19,17 +19,5 @@ spring:
     gateway:
       discovery:
         locator:
-          enabled: false
+          enabled: true
           lowerCaseServiceId: true
-      routes:
-        - id: addresses
-          uri: "lb://online-store-microservice-address"
-          predicates:
-            - "Path=/api/v1/adresses"
-            - "Method=POST"
-
-#        - id: storehouses
-#            uri: "lb://online-store-microservice-storehouse"
-#            predicates:
-#              - "Path=/api/v1/storehouses/{id}"
-#              - "Method=GET"
