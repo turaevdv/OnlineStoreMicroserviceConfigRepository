@@ -12,8 +12,8 @@ spring:
         - id: addresses
           uri: "lb://online-store-microservice-address"
           predicates:
-            - Path: "/api/v1/addresses"
-            - Method: "POST"
+            - "Path=/api/v1/addresses"
+            - "Method=POST"
 
 
 eureka:
