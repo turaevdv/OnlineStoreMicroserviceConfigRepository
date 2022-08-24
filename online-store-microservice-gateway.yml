@@ -25,5 +25,11 @@ spring:
         - id: addresses
           uri: "lb://online-store-microservice-address"
           predicates:
-            - "Path=/api/v1/**"
-            - "Method=POST, GET"
+            - "Path=/api/v1/adresses"
+            - "Method=POST"
+
+        - id: storehouses
+            uri: "lb://online-store-microservice-storehouse"
+            predicates:
+              - "Path=/api/v1/storehouses/{id}"
+              - "Method=GET"
