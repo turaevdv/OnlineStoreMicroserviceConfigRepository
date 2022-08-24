@@ -13,7 +13,7 @@ spring:
           uri: "lb://online-store-microservice-address"
           predicates:
             - Path: "/api/v1/addresses"
-            - Method: "GET"
+            - Method: "POST"
 
 
 eureka:
