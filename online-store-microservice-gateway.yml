@@ -1,0 +1,15 @@
+server:
+  port: 8070
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8074}/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
